@@ -1,0 +1,152 @@
+.face {
+	position: relative;
+	width: 530px;
+	height: 530px;
+	margin: 20px auto 0 auto;
+	background: url(../img/clockface.png);
+	list-style: none;
+	}
+
+.hand_sec, .hand_min, .hand_hour {
+	position: absolute;
+	width: 30px;
+	height: 530px;
+	top: 0px;
+	left: 250px;
+	}
+
+.hand_sec {
+	background: url(../img/sechand.png);
+	z-index: 3;
+   	}
+   
+.hand_min {
+	background: url(../img/minhand.png);
+	z-index: 2;
+   	}
+   
+.hand_hour {
+	background: url(../img/hourhand.png);
+	z-index: 1;
+   	}
+   	
+
+#clocks {
+    margin-top: 90px;
+    text-align: center;
+}
+   	
+   	
+.clock {
+    display: inline-block;
+    text-align: center;
+    transform: scale(0.6,0.6);
+    width: 530px;
+    vertical-align: middle;
+}
+
+.clock.focused {
+    transform: scale(1,1);
+    top: 70px;
+    position: relative;
+}
+
+.clock .details
+{
+	margin-top: -10px;
+	text-transform: uppercase;
+	
+}
+.clock .details ul
+{
+	list-style: none;
+	padding: 0;
+}
+.clock .details ul li:first-child {
+    margin-left: 0;
+}
+.clock .details ul li
+{
+	display: inline-block;
+	margin-left: 20px;
+	
+}
+
+
+.clock .details h3 {
+    font-size: 27px;
+    margin-bottom: 28px;
+    line-height: 27px;
+}
+
+.clock .settings
+{
+	background: transparent;
+	color: #4D5C6C;
+	display: none;
+	
+}
+.clock.focused .settings
+{
+	display: inline-block;
+}
+
+.clock .details ul strong {
+    display: block;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 42px;
+    margin-bottom: 6px;
+}
+
+.clock .details ul em {
+    display: none;
+    font-style: normal;
+    color: #5D6D7E;
+    font-size: 15px;
+    
+}
+
+.clock.focused .details ul em {
+	display: block;
+}
+
+
+#clock-new {
+    transform: scale(1,1);
+    position: relative;
+    top: -7px;
+}
+
+#clock-new button {
+    border: 4px dashed #54616F;
+    width: 244px;
+    height: 244px;
+    background: none;
+    border-radius: 122px;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#clock-new strong {
+    display: block;
+    position: relative;
+    top: -13px;
+    height: 50px;
+    color: #54616F;
+}
+#clock-new span {
+    display: block;
+    font-size: 61px;
+    line-height: 55px;
+}
+
+#clock-new em {
+    display: block;
+    position: relative;
+    font-style: normal;
+    top: 26px;
+    font-size: 20px;
+    font-weight: bold;
+}
